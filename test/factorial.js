@@ -10,11 +10,11 @@ QUnit.module('Тестируем функцию factorial', () => {
     });
 
     QUnit.test('Факториал для отрицательного числа должен выбрасывать ошибку', (assert) => {
-        assert.true(Number.isNaN(factorial(-1)), 'Возвращает NaN для -1');
+        assert.strictEqual(factorial(-1), null, 'Возвращает null для -1');
     });
 
     QUnit.test("Факториал дробного числа должен выбрасывать ошибку", (assert) => {
-        assert.true(Number.isNaN(factorial(2.5)), 'Возвращает NaN для 2.5');
+        assert.strictEqual(factorial(2.5), null, 'Возвращает null для 2.5');
     });
 
     QUnit.test("Факториал строки должен выбрасывать ошибку", (assert) => {
