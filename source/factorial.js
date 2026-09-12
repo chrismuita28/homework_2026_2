@@ -13,7 +13,6 @@
  * 
  * @returns {number}
  */
-
 const factorial = (n) => {
     if (typeof n !== 'number' || Number.isNaN(n)) {
         return NaN;
@@ -33,4 +32,4 @@ const factorial = (n) => {
     }
 
     return res;
-}
+};
