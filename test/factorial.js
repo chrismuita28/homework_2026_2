@@ -1,7 +1,5 @@
 'use strict';
 
-import { factorial } from "../factorial.js";
-
 QUnit.module('Тестируем функцию factorial', function () {
     QUnit.test('Факториал 0 должен быть 1', (assert) => {
         assert.strictEqual(factorial(0), 1, '0! = 1');

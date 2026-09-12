@@ -34,5 +34,3 @@ const factorial = (n) => {
 
     return res;
 }
-
-export default factorial;
