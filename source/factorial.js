@@ -25,10 +25,17 @@ const factorial = (n) => {
     if (n === 0 || n === 1) {
         return 1;
     }
+    
+    const cache = [1, 1];
 
-    let res = 1;
-    for (let i = 2; i <= n; i++) {
+    if (cache[n] !== undefined) {
+        return cache[n];
+    }
+
+    let res = cache[cache.length - 1];
+    for (let i = cache.length; i <= n; i++) {
         res *= i;
+        cache[i] = res;
     }
 
     return res;
